@@ -5,39 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .menu_ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu_ul li {
+            display: inline;
+        }
+
+        .menu_ul a {
+        text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 8px;
+        color:rgb(20, 20, 20);
+        background-color:lightgrey;
+        }
+
+        .menu_ul a:hover {
+        background-color:rgb(105, 91, 85);
+        }
+    </style>
 </head>
-<style>
-    .menu_ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 3;
-    }
-    .menu_ul li {
-    display: inline;
-}
-.menu_ul a {
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 8px;
-    color: rgb(0, 0, 0);
-    background-color:rgb(150, 100, 84);
-}
-</style>
 <body>
+    <h1>Menu</h1>
 
     <ul class="menu_ul">
     <ul class="menu_ul li">
     <ul class="menu_ul a">
+    <ul class="menu_ul a:hover">
 
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#product">List of product</a></li>
-        <li><a href="#Order">Order form</a></li>
-        <li><a href="#Contact">Contact us</a></li>
-
+        <li menu="menu_ul"><a href="#home">Home</a></li>
+        <li menu="menu_ul"><a href="#product">List of Product</a></li>
+        <li menu="menu_ul"><a href="#order">Order Form</a></li>
+        <li menu="menu_ul"><a href="#contact">Contact Us</a></li>
     </ul>
     </ul>
     </ul>
+    </ul>
 
-    <h1>Buat Menu</h1>
 </body>
 </html>
